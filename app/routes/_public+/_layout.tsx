@@ -4,7 +4,7 @@ export default function PublicLayout() {
   return (
     <>
       <header className="bg-red-50">
-         <Navigation/>
+         <Navigation />
       </header>
       <main className="flex-1 bg-indigo-100">
         <Outlet />
@@ -31,7 +31,7 @@ function Navigation() {
           <li key={link.href} className="inline-block ml-4">
             <NavLink
               end
-              to={link.href}
+              to={link.href} 
               className={({ isActive }) =>
                 isActive ? "underline pointer-events-none" : "hover:opacity-50"
               }
